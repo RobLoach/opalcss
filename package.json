@@ -1,0 +1,31 @@
+{
+  "name": "opal-css",
+  "version": "0.0.1",
+  "description": "Opal is a robust, elegant, feature rich CSS processor.",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "standard": "^4.5.4",
+    "testit": "*"
+  },
+  "scripts": {
+    "test": "node test && standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobLoach/opal-css.git"
+  },
+  "author": {
+    "name": "Rob Loach",
+    "url": "http://github.com/RobLoach"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "clone": "^1.0.2",
+    "cssnano": "^2.1.0",
+    "postcss": "^4.1.16",
+    "precss": "^0.2.2"
+  }
+}

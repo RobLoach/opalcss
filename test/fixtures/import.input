@@ -1,0 +1,8 @@
+/**
+ * Example of using @import.
+ */
+@import "./vars.input";
+
+body {
+  background: black;
+}
