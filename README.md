@@ -17,11 +17,14 @@
 
 ## API
 
+### Stand-Alone API
 ```js
 var opal = require('opal-css')
 
-opal('string of opal', options)
-//=> Compiled CSS
+opal.process('string of opal', options).then(function (css) {
+  css
+  //=> Compiled CSS
+})
 ```
 
 ## License
