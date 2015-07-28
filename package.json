@@ -6,7 +6,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "standard": "^4.5.4",
+    "standard": "*",
     "testit": "*"
   },
   "scripts": {
@@ -26,6 +26,6 @@
     "clone": "^1.0.2",
     "cssnano": "^2.1.0",
     "postcss": "^4.1.16",
-    "precss": "^0.2.2"
+    "precss": "^0.3.0"
   }
 }
