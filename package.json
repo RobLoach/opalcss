@@ -1,5 +1,5 @@
 {
-  "name": "opal-css",
+  "name": "opalcss",
   "version": "0.0.2",
   "description": "Opal is a robust, elegant, feature rich CSS processor.",
   "files": [
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RobLoach/opal-css.git"
+    "url": "https://github.com/RobLoach/opalcss.git"
   },
   "author": {
     "name": "Rob Loach",

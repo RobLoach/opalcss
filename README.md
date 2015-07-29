@@ -1,13 +1,13 @@
-# Opal [![NPM version](https://img.shields.io/npm/v/opal-css.svg)](https://www.npmjs.org/package/opal-css)
+# Opal CSS [![NPM version](https://img.shields.io/npm/v/opalcss.svg)](https://www.npmjs.org/package/opalcss)
+
+[![Build Status](https://img.shields.io/travis/RobLoach/opalcss/master.svg)](https://travis-ci.org/RobLoach/opalcss)
+[![Dependency Status](https://img.shields.io/david/RobLoach/opalcss/master.svg)](http://david-dm.org/RobLoach/opalcss)
 
 > Opal is a robust, elegant, feature-rich CSS processor for Node.js and the browser.
 
-[![Build Status](https://img.shields.io/travis/RobLoach/opal-css/master.svg)](https://travis-ci.org/RobLoach/opal-css)
-[![Dependency Status](https://img.shields.io/david/RobLoach/opal-css/master.svg)](http://david-dm.org/RobLoach/opal-css)
-
 ## Installation
 
-    npm install opal-css --save
+    npm install opalcss --save
 
 ## Features
 
@@ -19,7 +19,7 @@
 
 ### Stand-Alone API
 ```js
-var opal = require('opal-css')
+var opal = require('opalcss')
 
 opal.process('string of opal', options).then(function (css) {
   css

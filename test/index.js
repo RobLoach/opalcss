@@ -29,7 +29,7 @@ function test (name) {
   })
 }
 
-testit('opal-css', function () {
+testit('opalcss', function () {
   test('vars')
   test('import')
   test('nested')
