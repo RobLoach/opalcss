@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/RobLoach/opalcss/master.svg)](https://travis-ci.org/RobLoach/opalcss)
 [![Dependency Status](https://img.shields.io/david/RobLoach/opalcss/master.svg)](http://david-dm.org/RobLoach/opalcss)
 
-> Opal is a robust, elegant, feature-rich CSS processor for Node.js and the browser.
+> Opal is a robust, elegant, feature-rich CSS pre-processor for Node.js and the browser.
 
 ## Installation
 
@@ -21,11 +21,20 @@
 ```js
 var opal = require('opalcss')
 
-opal.process('string of opal', options).then(function (css) {
-  css
+opal.process('string of opal', options).then(function (result) {
+  result.css
   //=> Compiled CSS
 })
 ```
+
+### [PostCSS](https://github.com/postcss/postcss)
+```js
+postcss([ require('opalcss')({ /* options */ }) ])
+```
+
+### CLI
+
+    echo "TODO: Implement a CLI"
 
 ## License
 
