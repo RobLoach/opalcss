@@ -3,26 +3,30 @@
 var Postcss = require('postcss')
 var clone = require('clone')
 
+/**
+ * The processors to use with OpalCSS.
+ */
 var processors = {
   precss: require('precss'),
-  cssnano: require('cssnano'),
-  autoprefixer: {
-    processor: require('autoprefixer-core'),
-    opts: { browsers: ['last 2 versions'] }
-  }
+  cssnano: require('cssnano')
 }
 
+/**
+ * Opal CSS PostCSS Plugin
+ */
 var opal = Postcss.plugin('opal', function (options) {
+  var postcss = Postcss()
   options = options || {}
 
-  var postcss = Postcss()
+  // Initialize all the processors.
+  for (var name in processors) {
+    // Retrieve any of the given options for the processor.
+    var opts = (name in options) ? options[name] : null
 
-  for (var i in processors) {
-    if (typeof processors[i] === 'function') {
-      postcss.use(processors[i]())
-    } else {
-      var opts = processors[i].opts
-      postcss.use(clone(processors[i].processor(opts)))
+    // Only enable the processor if it's not explicitly disabled.
+    if (opts !== false) {
+      // Initialize the processor with the given options.
+      postcss.use(processors[name](opts))
     }
   }
 

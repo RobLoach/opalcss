@@ -1,1 +1,1 @@
-.menu,.menu_link{width:200px}.menu_link{background:#056ef0}body{background:#000}
+.menu{width:200px}.menu_link{background:#056ef0;width:200px}body{background:#000}

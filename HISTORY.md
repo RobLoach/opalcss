@@ -1,8 +1,9 @@
 # Changelog
 
-## v0.1.0: 2015-07-29
+## v0.1.0: 2015-09-08
 
 - Renamed to `opalcss`
+- Updated dependencies
 
 ## v0.0.2: 2015-07-20
 
