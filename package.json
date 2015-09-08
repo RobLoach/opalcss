@@ -1,6 +1,6 @@
 {
   "name": "opalcss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Opal is a robust, elegant, feature rich CSS processor.",
   "files": [
     "index.js"

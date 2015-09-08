@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.1: 2015-09-08
+
+- Allows passing of options to the processors
+
 ## v0.1.0: 2015-09-08
 
 - Renamed to `opalcss`
