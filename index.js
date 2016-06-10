@@ -1,7 +1,6 @@
 'use strict'
 
 var Postcss = require('postcss')
-var clone = require('clone')
 
 /**
  * The processors to use with OpalCSS.
@@ -21,7 +20,7 @@ var opal = Postcss.plugin('opal', function (options) {
   // Initialize all the processors.
   for (var name in processors) {
     // Retrieve any of the given options for the processor.
-    var opts = (name in options) ? options[name] : null
+    var opts = (name in options) ? options[name] : {}
 
     // Only enable the processor if it's not explicitly disabled.
     if (opts !== false) {
