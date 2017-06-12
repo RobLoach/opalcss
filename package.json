@@ -22,8 +22,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "cssnano": "^3.0.1",
-    "postcss": "^5.0.4",
-    "precss": "^1.1.2"
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.2",
+    "precss": "^1.4.0"
   }
 }

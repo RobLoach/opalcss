@@ -1,11 +1,11 @@
 'use strict'
 
-var Postcss = require('postcss')
+const Postcss = require('postcss')
 
 /**
  * The processors to use with OpalCSS.
  */
-var processors = {
+const processors = {
   precss: require('precss'),
   cssnano: require('cssnano')
 }
@@ -13,7 +13,7 @@ var processors = {
 /**
  * Opal CSS PostCSS Plugin
  */
-var opal = Postcss.plugin('opal', function (options) {
+const opal = Postcss.plugin('opal', function (options) {
   var postcss = Postcss()
   options = options || {}
 
